@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Exam</string>
+    <string-array name="cities">
+        <item>Chicago,IL</item>
+        <item>Atlanta,GA</item>
+        <item>Charlotte,NC</item>
+        <item>San Francisco,CA</item>
+        <item>Seattle,WA</item>
+        <item>Orlando,FL</item>
+    </string-array>
+    <string name="submitBtnLbl">Submit</string>
+    <string name="viewMarked">View Marked Venues</string>
+    <string name="clearAll">Clear All</string>
+</resources>
