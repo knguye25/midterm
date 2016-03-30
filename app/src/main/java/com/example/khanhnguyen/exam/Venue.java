@@ -7,7 +7,7 @@ public class Venue implements Parcelable{
     private String id, venueName, categoryName, iconUrl;
     private int checkinCounts;
 
-    public Venue(){}
+    public Venue(){this.checkinCounts = -1;}
 
     public String getId() {return id;}
     public void setId(String id) {this.id = id;}
@@ -57,4 +57,10 @@ public class Venue implements Parcelable{
             return new Venue[size];
         }
     };
+
+    public boolean isComplete(){
+        if(id!=null && venueName!=null && categoryName!=null && iconUrl!=null && checkinCounts!=-1)
+            return (!id.isEmpty() && !venueName.isEmpty() && !categoryName.isEmpty() && !iconUrl.isEmpty());
+        return false;
+    }
 }
